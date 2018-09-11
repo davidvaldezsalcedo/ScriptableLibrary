@@ -371,11 +371,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45668a2678e531042b1853f37b69e441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RefBool: {fileID: 11400000, guid: c6c4b4f8a74c0944d83f4ebfc4beb22d, type: 2}
-  _OnRefBoolChanged:
+  _RefVar: {fileID: 11400000, guid: c6c4b4f8a74c0944d83f4ebfc4beb22d, type: 2}
+  _OnRefVarChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 170076733}
+      - m_Target: {fileID: 1026315100}
         m_MethodName: SetActive
         m_Mode: 0
         m_Arguments:
@@ -409,11 +409,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 754088644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a2311aca37e0134cb0e13b1d64bee08, type: 3}
+  m_Script: {fileID: 11500000, guid: 18a4724313b3d8e43b89af5f62be37ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RefFloat: {fileID: 11400000, guid: 3294de6c0e9abad418f79c94d3fab672, type: 2}
-  _OnRefFloatChanged:
+  _RefVar: {fileID: 11400000, guid: 3294de6c0e9abad418f79c94d3fab672, type: 2}
+  _OnRefVarChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 170076734}
