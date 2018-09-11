@@ -353,6 +353,7 @@ GameObject:
   - component: {fileID: 754088646}
   - component: {fileID: 754088645}
   - component: {fileID: 754088647}
+  - component: {fileID: 754088648}
   m_Layer: 0
   m_Name: ___TestObject
   m_TagString: Untagged
@@ -428,6 +429,34 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: SL.UEvent_Float, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &754088648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754088644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8da548d752ef8499f76b9cba6d1b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _RefVar: {fileID: 11400000, guid: 1e3e8bd7ed0695c4caed83249e5ff095, type: 2}
+  _OnRefVarChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 845901412}
+        m_MethodName: set_position
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: SL.UEvent_Vector3, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
 --- !u!1 &845901408
 GameObject:
