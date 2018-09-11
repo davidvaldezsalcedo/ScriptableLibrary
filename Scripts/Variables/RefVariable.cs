@@ -10,6 +10,7 @@ namespace SL
 
 		[SerializeField, GetSet("Value")]
 		protected T _Value;
+
 		public T Value
 		{
 			get
@@ -21,6 +22,6 @@ namespace SL
 				_Value = value;
 				OnValueChanged();
 			}
-		}
+		}	
 	}
 }

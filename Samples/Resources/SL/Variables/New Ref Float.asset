@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bc88cf6443122d428d879f6a43cfb92, type: 3}
   m_Name: New Ref Float
   m_EditorClassIdentifier: 
-  _Value: 1
+  _Value: 1.36

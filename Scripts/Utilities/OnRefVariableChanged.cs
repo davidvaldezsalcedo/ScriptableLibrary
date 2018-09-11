@@ -15,9 +15,16 @@ namespace SL
 		[SerializeField]
 		protected UEvent _OnRefVarChanged;
 
+		[SerializeField]
+		protected bool _TriggerOnEnable = false;
+
 		protected void OnEnable()
 		{
 			_RefVar.OnValueChanged += Trigger;
+			if(_TriggerOnEnable)
+			{
+				Trigger();
+			}
 		}
 
 		protected void OnDisable()

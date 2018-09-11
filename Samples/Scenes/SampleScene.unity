@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 534669903}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -336,13 +336,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.22095498, y: -0.21104822, z: 0.04903949, w: -0.9509115}
-  m_LocalPosition: {x: -1.494453, y: 2.4989645, z: -3.795949}
+  m_LocalRotation: {x: 0.2164396, y: 0, z: 0, w: 0.97629607}
+  m_LocalPosition: {x: 0, y: 3, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 25, y: 0, z: 0}
 --- !u!1 &754088644
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +389,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: SL.UEvent_Bool, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  _TriggerOnEnable: 1
 --- !u!4 &754088646
 Transform:
   m_ObjectHideFlags: 0
@@ -430,6 +431,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: SL.UEvent_Float, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  _TriggerOnEnable: 0
 --- !u!114 &754088648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,6 +460,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: SL.UEvent_Vector3, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  _TriggerOnEnable: 1
 --- !u!1 &845901408
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,7 +540,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 845901408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.99, y: 0.5, z: 1.77}
+  m_LocalPosition: {x: 0.94, y: 0.5, z: 2.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -622,7 +625,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1026315100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.587, y: 0.5, z: 0.823}
+  m_LocalPosition: {x: -2.53, y: 0.5, z: 2.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -707,7 +710,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1994209123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.254, y: 0.5, z: -1.381}
+  m_LocalPosition: {x: 3, y: 0.5, z: 2.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
