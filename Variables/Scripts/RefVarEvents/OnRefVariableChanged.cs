@@ -13,28 +13,29 @@ namespace SL.Variables
 		protected RefVar _RefVar;
 
 		[SerializeField]
-		protected UEvent _OnRefVarChanged;
+		protected UEvent _Responses;
 
 		[SerializeField]
 		protected bool _TriggerOnEnable = false;
 
 		protected void OnEnable()
 		{
-			_RefVar.OnValueChanged += Trigger;
+			_RefVar.OnValueChanged += TriggerResponses;
 			if(_TriggerOnEnable)
 			{
-				Trigger();
+				TriggerResponses();
 			}
 		}
 
 		protected void OnDisable()
 		{
-			_RefVar.OnValueChanged -= Trigger;
+			_RefVar.OnValueChanged -= TriggerResponses;
 		}
 
-		public void Trigger()
+		[InspectButton("Trigger Responses")]
+		public void TriggerResponses()
 		{
-			_OnRefVarChanged.Invoke(_RefVar.Value);
+			_Responses.Invoke(_RefVar.Value);
 		}
 
 	}

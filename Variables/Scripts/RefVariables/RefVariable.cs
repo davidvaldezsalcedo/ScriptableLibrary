@@ -22,6 +22,6 @@ namespace SL.Variables
 				_Value = value;
 				OnValueChanged();
 			}
-		}	
+		}
 	}
 }

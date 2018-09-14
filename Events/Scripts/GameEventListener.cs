@@ -6,22 +6,22 @@ namespace SL.Events
 	public class GameEventListener : MonoBehaviour
 	{
 		public GameEvent Event;
-		public UnityEvent Response;
+		public UnityEvent Responses;
 
 		private void OnEnable()
 		{
-			Event.Listeners += OnEventTriggered;
+			Event.Listeners += TriggerResponses;
 		}
 
 		private void OnDisable()
 		{
-			Event.Listeners -= OnEventTriggered;
+			Event.Listeners -= TriggerResponses;
 		}
 
-		[InspectButton("Trigger Events", visibilityMode = InspectButtonAttribute.VisibilityMode.PlayModeOnly)]
-		public void OnEventTriggered()
+		[InspectButton("Trigger Responses")]//, visibilityMode = InspectButtonAttribute.VisibilityMode.PlayModeOnly)]
+		public void TriggerResponses()
 		{
-			Response.Invoke();
+			Responses.Invoke();
 		}
 
 	}
