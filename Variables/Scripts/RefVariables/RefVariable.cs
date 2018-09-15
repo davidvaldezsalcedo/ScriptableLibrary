@@ -1,13 +1,12 @@
 ﻿using System;
 using UnityEngine;
+using SL.Events;
 
 namespace SL.Variables
 {
 	[Serializable]
-	public abstract class RefVariable<T> : ScriptableObject
+	public abstract class RefVariable<T> : GameEvent
 	{
-		public event Action OnValueChanged = delegate { };
-
 		[SerializeField, GetSet("Value")]
 		protected T _Value;
 
@@ -20,7 +19,7 @@ namespace SL.Variables
 			set
 			{
 				_Value = value;
-				OnValueChanged();
+				Trigger();
 			}
 		}
 	}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -373,7 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _RefVar: {fileID: 11400000, guid: c6c4b4f8a74c0944d83f4ebfc4beb22d, type: 2}
-  _OnRefVarChanged:
+  _OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1026315100}
@@ -389,7 +389,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: SL.Variables.UEvent_Bool, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  _TriggerOnEnable: 1
+  _TriggerOnEnable: 0
 --- !u!4 &754088646
 Transform:
   m_ObjectHideFlags: 0
@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _RefVar: {fileID: 11400000, guid: 3294de6c0e9abad418f79c94d3fab672, type: 2}
-  _OnRefVarChanged:
+  _OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 170076734}
@@ -444,7 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _RefVar: {fileID: 11400000, guid: 1e3e8bd7ed0695c4caed83249e5ff095, type: 2}
-  _OnRefVarChanged:
+  _OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 845901412}
@@ -664,13 +664,13 @@ MonoBehaviour:
     ReferenceVar: {fileID: 0}
   _FloatVar:
     UseConstant: 0
-    ConstantValue: 0
+    ConstantValue: -0.08
     ReferenceVar: {fileID: 11400000, guid: 3294de6c0e9abad418f79c94d3fab672, type: 2}
   _V3Var:
     UseConstant: 0
     ConstantValue: {x: 0, y: 0, z: 0}
     ReferenceVar: {fileID: 11400000, guid: 1e3e8bd7ed0695c4caed83249e5ff095, type: 2}
-  _XOffset: 0
+  _XOffset: 58
 --- !u!4 &1091295915
 Transform:
   m_ObjectHideFlags: 0
@@ -806,7 +806,7 @@ MonoBehaviour:
     ReferenceVar: {fileID: 0}
   _V3Var:
     UseConstant: 1
-    ConstantValue: {x: 0, y: 1, z: 2}
+    ConstantValue: {x: 1.2, y: 2.92, z: 3.59}
     ReferenceVar: {fileID: 0}
   _XOffset: 300
 --- !u!4 &2039890313

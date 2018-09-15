@@ -29,27 +29,18 @@ namespace SL.Variables
 
 			EditorGUI.BeginProperty(pos, lbl ,prop);
 
-				string[] tagArr = new string[2] {"Constant","RefVariable"};
 
 				int indentLvl = EditorGUI.indentLevel;
 				EditorGUI.indentLevel = 0;
 
-				pos = EditorGUI.PrefixLabel(pos, GUIUtility.GetControlID(FocusType.Passive), lbl);
-				
 				int index = constRefIndex.boolValue ? 0 : 1;
-				index = EditorGUI.Popup(new Rect(pos.x, pos.y, 16, pos.height), "", index, tagArr);
-				constRefIndex.boolValue = index == 0;
-				pos.width -= 24;
-				pos.x += 24;
 
-				if(index == 0)
-				{
-					EditorGUI.PropertyField(pos, constVal, GUIContent.none);
-				}
-				else
-				{
-					EditorGUI.PropertyField(pos, refVar, GUIContent.none);
-				}
+				pos.width -= 28;
+				EditorGUI.PropertyField(pos, index == 0 ? constVal : refVar, lbl);
+
+				string[] tagArr = new string[2] {"Constant","RefVariable"};
+				index = EditorGUI.Popup(new Rect(pos.width + 24, pos.y, 16, pos.height), "", index, tagArr);
+				constRefIndex.boolValue = index == 0;
 
 				EditorGUI.indentLevel = indentLvl;
 

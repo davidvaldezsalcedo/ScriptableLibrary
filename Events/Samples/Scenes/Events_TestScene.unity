@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -188,7 +188,6 @@ GameObject:
   m_Component:
   - component: {fileID: 485705610}
   - component: {fileID: 485705609}
-  - component: {fileID: 485705611}
   - component: {fileID: 485705608}
   m_Layer: 0
   m_Name: TestObject_1
@@ -260,35 +259,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &485705611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 485705607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45668a2678e531042b1853f37b69e441, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _RefVar: {fileID: 11400000, guid: c6c4b4f8a74c0944d83f4ebfc4beb22d, type: 2}
-  _Responses:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 485705608}
-        m_MethodName: PrintHW
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: SL.Variables.UEvent_Bool, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  _TriggerOnEnable: 1
 --- !u!1 &1139582298
 GameObject:
   m_ObjectHideFlags: 0
